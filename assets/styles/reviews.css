@@ -1,0 +1,63 @@
+.reviews-section {
+    padding-top: 60px;
+}
+
+.reviews-count {
+    font-weight: 400;
+    font-size: 32px;
+    color: #757575;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.reviews-rating {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color-black);
+}
+
+.slider-section {
+    position: relative;
+}
+
+.left-button {
+    left: 0;
+    z-index: 10000;
+}
+
+.right-button {
+    right: 0;
+    z-index: 10000;
+}
+
+.slider-button {
+    top: 135px;
+    background-color: white;
+    position: absolute;
+    padding: 12px 12px 6px 12px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #8888882b;
+    display: inline-block;
+    cursor: pointer;
+}
+.slider-container {
+    padding-bottom: 120px;
+	display: grid;
+	grid-template-columns: repeat(4, 552px);
+	gap: 12px;
+    margin-left: -270px;
+}
+
+.slider-item {
+    padding: 16px;
+    display: flex;
+    gap:16px;
+    width: 552px; /* Устанавливаем фиксированную ширину для элементов */
+    height: auto; /* Устанавливаем фиксированную высоту для элементов */
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+}
