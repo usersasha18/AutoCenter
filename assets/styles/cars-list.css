@@ -27,11 +27,12 @@
     padding: 20px;
     background-color: var(--card-bg-color);
     border-radius: 20px;
-    width: 411px;
+   max-width: 411px;
+   width: 100%;
 }
 
 .car-item > img {
-    width: 371px;
+    width: 100%;
     height: auto;
 }
 
@@ -53,16 +54,16 @@
 }
 
 .card-list-button {
-    background-color: var(--black-button);
-    font-size: 14px;
-    padding:  12px 20px;
-    font-weight: 700;
-    border-radius: 12px;
-    color: white;
-    font-family: "Inter", sans-serif;
-    border: none;
-    cursor: pointer;
-    transition: .3s linear;
+	background-color: var(--black-button);
+	font-size: 14px;
+	padding: 9px 9px;
+	font-weight: 700;
+	border-radius: 12px;
+	color: white;
+	font-family: "Inter", sans-serif;
+	border: none;
+	cursor: pointer;
+	transition: .3s linear;
 }
 
 .card-list-button:hover {

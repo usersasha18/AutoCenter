@@ -61,3 +61,16 @@
     border-radius: 20px;
     background-color: #F8F8F8;
 }
+
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slide-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

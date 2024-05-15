@@ -1,5 +1,6 @@
 const cars = [
   {
+    id: 1,
     title: "Subaru LEVORG VN5",
     image: 'subaru.png',
     stat: {
@@ -12,6 +13,7 @@ const cars = [
     price: "2 115 600 ₽",
   },
   {
+    id: 2,
     title: "Mazda Mazda6 2.5 AT Touring",
     stat: {
         engine: "2.5 л",
@@ -24,6 +26,7 @@ const cars = [
     price: "2 802 400 ₽",
   },
   {
+    id: 3,
     title: "Toyota CROWN AZSH21",
     image: 'toyota.png',
     stat: {
@@ -36,6 +39,7 @@ const cars = [
     price: "2 852 600 ₽",
   },
   {
+    id: 4,
     title: "Lexus RC F USC10",
     image: 'lexus.png',
     stat: {
@@ -48,6 +52,7 @@ const cars = [
     price: "5 965 600 ₽",
   },
   {
+    id: 5,
     title: "Mitsubishi ECLIPSE CROSS G...",
     image: 'mitsubisi.png',
     stat: {
@@ -60,6 +65,7 @@ const cars = [
     price: "2 005 200 ₽",
   },
   {
+    id: 6,
     title: "Subaru IMPREZA WRX VAG",
     image: 'subaru-IMPREZA.png',
     stat: {
@@ -72,6 +78,7 @@ const cars = [
     price: "2 852 600 ₽",
   },
   {
+    id: 7,
     title: "Lexus RX200T AGL20W",
     image: 'lexus-rx.png',
     stat: {
@@ -84,6 +91,7 @@ const cars = [
     price: "2 999 800 ₽",
   },
   {
+    id: 8,
     title: "Mitsubishi Outlander PHEV G...",
     image: 'mitsubishi-outlander.png',
     stat: {

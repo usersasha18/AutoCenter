@@ -7,6 +7,19 @@
     <title>AutoCenter</title>
 </head>
 <body>
+    <div class="burger-menu-hidden">
+        <div class="wrapper-modal-window">
+            <div class="close-button">x</div>
+            <ul class="inner-burger-menu-hidden">
+                <li><a href="#">Авто из Японии</a></li>
+                <li><a href="#">Авто из Китая</a></li>
+                <li><a href="#">Авто из Кореи</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+        </div>
+    </div>
     <div class="container">
         <!-- header -->
         <header class="header">
@@ -47,6 +60,9 @@
                    <span class="header-phone-text">Звонок по РФ бесплатный</span>
                 </div>
             </div>
+            <div class="header-hidden-menu">
+                <img src="./assets/images/burger-menu.svg" alt="">
+            </div>
         </header>
         <!-- header-preview -->
         <div class="header-preview">
@@ -64,7 +80,7 @@
             <div class="cars-desc-text">
                 <p class="section-subtext">Toyota, Honda, Nissan и другие японские автомобили.</p>
                 <a href="" class="arrow-block">
-                    Смотреть все
+                    <span>Смотреть все</span>
                     <img src="./assets/images/arrow-right.svg" alt="">
                 </a>
             </div>
@@ -79,15 +95,15 @@
             <h2 class="section-title">Автомобили из Китая и Кореи</h2>
             <p class="section-subtext">Поможем с покупкой автомобилей из Китая и Кореи.</p>
             <div class="catalog-section-cards">
-                <div class="caralog-item">
-                    <div class="catalog-item-content"  data-image="1">
+                <div class="caralog-item" data-image="1">
+                    <div class="catalog-item-content">
                         <h3>Автомобили из Китая</h3>
                         <p>Chery, Haval, EXEED и другие китайские автомобили.</p>
                         <button class="button" data-button="catalog-button">Смотреть в каталоге</button>
                     </div>
                 </div>
-                <div class="caralog-item">
-                    <div class="catalog-item-content" data-image="2">
+                <div class="caralog-item"  data-image="2">
+                    <div class="catalog-item-content">
                         <h3>Автомобили из Кореи</h3>
                         <p>Hyundai, KIA, Genesis и другие корейские автомобили.</p>
                         <button class="button" data-button="catalog-button">Смотреть в каталоге</button>
@@ -157,123 +173,163 @@
             </div>
             <div class="slider-container">
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/vasya.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/vasya.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/viktor.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/vasya.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/vasya.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/olga.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/anastasiya.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="slider-image">
-                        <img src="./assets/images/alexander.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-image-inner">
+                            <img src="./assets/images/anastasiya.png" alt="">
+                        </div>
+                        <div class="slider-rating">
+                            <h4>Кисилев Василий</h4>
+                            <img src="./assets/images/stars.svg" alt="">
+                        </div>
                     </div>
-                    <div class="slider-info">
-                        <h4>Кисилев Василий</h4>
-                        <img src="./assets/images/stars.svg" alt="rating">
-                        <p>
+                    <div class="slide-bot">
+                        <p class="slide-review">
                             По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
                         </p>
-                        <p>7 октября 2023 г.</p>
+                        <span class="slide-data">7 октября 2023 г.</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="contact-section">
             <div class="contact-text">
-                <h2 class="section-title">Контактная информация</h2>
-                <p class="section-subtext contact">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</p>
+                <div class="contact-text-top">
+                    <h2 class="section-title">Контактная информация</h2>
+                    <p class="section-subtext contact">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</p>
+                </div>
                 <div class="contact-social">
                     <div class="contact-social-info">
-                        <span>Позвонить</span>
-                        <p class="">+7 123 456 78 90</p>
-                        <span>Написать</span>
-                        <p class="">info@example.com</p>
-                        <span>Адрес</span>
-                        <p class="">123 Main Street, Tokyo, Japan</p>
+                        <div class="social-info-item">
+                            <span>Позвонить</span>
+                            <p class="">+7 123 456 78 90</p>
+                        </div>
+                        <div class="social-info-item">
+                            <span>Написать</span>
+                            <p class="">info@example.com</p>
+                        </div>
+                        <div class="social-info-item">
+                            <span>Адрес</span>
+                            <p class="">123 Main Street, Tokyo, Japan</p>
+                        </div>
                     </div>
                     <div class="contact-social-links">
                         <div class="links-item">
@@ -282,11 +338,11 @@
                         </div>
                         <div class="links-item">
                             <img src="./assets/images/yandex.png" alt="yandex">
-                            <a href="#">Мы на 2гис</a>
+                            <a href="#">Мы на Яндекс картах</a>
                         </div>
                         <div class="links-item">
                             <img src="./assets/images/vl.png" alt="vl">
-                            <a href="#">Мы на 2гис</a>
+                            <a href="#">VL справочник</a>
                         </div>
                     </div>
                 </div>
@@ -294,23 +350,116 @@
             <div class="contact-form">
                 <h3 class="contact-form-title">Оставить заявку</h3>
                 <form action="/submit-form" method="post">
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Имя" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <div class="contact-form-top">
+                        <div class="contact-name">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                        </div>
+                        <div class="contact-phone">
+                            <label for="phone">Телеофн <span class="inner-text-phone">(Обязательно)</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7" required>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" id="address" name="address" placeholder="Уточнение адреса">
+                    <div class="contact-textarea">
+                        <label for="address">Уточните свой вопрос</label>
+                        <textarea type="text" id="address" name="address" placeholder="Введите текст сообщения"></textarea>
                     </div>
-                    <div>
-                        <input type="checkbox" id="agree" name="agree" required>
-                        <label for="agree">Я согласен с условиями</label>
+                    <div class="contact-checkbox">
+                        <div class="inner-contact-checkbox">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">С  <a href="#">правилами политики конфиденциальности</a> ознакомлен</label>
+                        </div>
+                        <button type="submit" class="form-button">Отправить</button>
                     </div>
-                    <button type="submit">Отправить</button>
                 </form>
             </div>
-            <footer class="footer"></footer>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="./assets/images/white-logo.svg" alt="footer-logo">
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Каталог авто</a></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="cars-links-item">
+                        <h3 class="cars-links-item">
+                            Авто из Японии
+                        </h3>
+                        <div class="cars-links-list">
+                            <a href="">Toyota</a>
+                            <a href="">Nissan</a>
+                            <a href="">Honda</a>
+                            <a href="">Mazda</a>
+                            <a href="">Mitsubishi</a>
+                            <a href="">Subaru</a>
+                            <a href="">Suzuki</a>
+                            <a href="">Lexus</a>
+                            <a href="">BMW</a>
+                            <a href="">Daihatsu</a>
+                        </div>
+                    </div>
+                    <div class="cars-links-item">
+                        <h3 class="cars-links-item">
+                            Авто из Китая
+                        </h3>
+                        <div class="cars-links-list">
+                            <a href="">Changan</a>
+                            <a href="">Exeed</a>
+                            <a href="">Geely</a>
+                            <a href="">Chery</a>
+                            <a href="">Haval</a>
+                            <a href="">FAW</a>
+                            <a href="">BYD</a>
+                            <a href="">JAC</a>
+                            <a href="">Lifan</a>
+                            <a href="">DongFeng</a>
+                        </div>
+                    </div>
+                    <div class="cars-links-item">
+                        <h3 class="cars-links-item">
+                            Авто из Кореи
+                        </h3>
+                        <div class="cars-links-list">
+                            <a href="">Hyundai</a>
+                            <a href="">Kia</a>
+                            <a href="">SsangYong</a>
+                            <a href="">Daewoo</a>
+                            <a href="">Samsung</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <hr>
+            <div class="footer-social">
+                <div class="footer-social-docs">
+                    <a href="">Политика конфиденциальности</a>
+                    <p>© 2003–2024 ООО "Автоцентр"</p>
+                </div>
+                <div class="footer-social-contact">
+                    <div class="header-social footer-contact">
+                        <img src="./assets/images/whatsapp.svg" alt="whatsapp">
+                        <img src="./assets/images/telegram.svg" alt="telegram">
+                    </div>
+                    <div class="header-phone footer-contact">
+                       <span class="header-phone-number">+7 123 456 78 90</span>
+                       <span class="header-phone-text">Звонок по РФ бесплатный</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/burgerMenu.js"></script>
     <script type="module" src="./assets/js/carslist.js"></script>
     <script type="module" src="./assets/js/data.js"></script>
 </body>

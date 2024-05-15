@@ -8,10 +8,37 @@
     padding: 60px;
 }
 
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact-form-title{
+    font-size: 24px;
+    font-weight: 900;
+    padding-bottom:24px ;
+}
+
+.contact-text-top {
+}
+
 .contact-social { 
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
+}
+
+.contact-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.links-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .contact-form {
     /* position: absolute;
@@ -24,12 +51,139 @@
     max-width: 603px;
     padding: 40px;
 }
-.contact-text > h2 {
+.contact-text-top > h2 {
     color: var(--text-color-white);
 }
+.social-info-item {
+    padding-bottom: 20px;
+}
+.social-info-item:last-child {
+    padding-bottom: 0px ;
+}
+.social-info-item > span {
+    font-size: 14px;
+    color: var(--text-gray-color);
+}
 
+.social-info-item > p {
+    font-weight: 700;
+    color: var(--text-color-white);
+    font-size: 16px;
+    margin-top: 6px;
+}
+.links-item > a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+}
+
+.links-item > a:hover {
+    color: var(--red-text-color);
+}
 input[name=address] {
     width: 100%;
 }
  
 
+
+
+/* form */
+
+.contact-name , .contact-phone, .contact-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-textarea , .contact-form-top{
+    padding-bottom: 24px;
+}
+.contact-form-top {
+    display: flex;
+    gap: 10px;
+}
+label {
+    padding-bottom: 8px;
+}
+.contact-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+#name, #phone {
+    outline: none;
+    padding: 16px;
+    border-radius: 10px;
+    color: #757575 ;
+    background-color: #F8F8F8;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+#address {
+    outline: none;
+    height: 101px ;
+    resize: none;
+    border: none;
+    padding: 16px;
+    background-color: #F8F8F8;
+    color: #757575;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+
+#agree {
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+    background-color: #FFFFFF;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.contact-checkbox {
+    gap: 10px;
+}
+
+label ,label > a {
+    font-size: 14px;
+}
+
+label > a {
+    color: #1673FE;
+    text-decoration: none;
+}
+
+#agree:checked {
+ color: rgb(45, 140, 255);
+}
+
+.form-button {
+    padding: 24px 64px;
+    border: none;
+    font-family: "Inter" , sans-serif;
+    font-weight: 800;
+    border-radius: 16px;
+    font-size: 18px;
+    color: #757575;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+
+.form-button:hover {
+    background-color: var(--red-text-color);
+    color: var(--text-color-white);
+}
+
+.contact-phone {
+    max-width: 100%;
+    
+}

@@ -86,3 +86,15 @@
 .header-phone {
     width: 180px;
 }
+
+.header-hidden-menu {
+    display: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.header-hidden-menu > img {
+    width: 100%;
+    height: auto;
+}

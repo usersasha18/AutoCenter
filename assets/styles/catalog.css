@@ -1,3 +1,8 @@
+.catalog-section-cards {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
 .catalog-section {
     padding-bottom: 120px;
     width: 100%;
@@ -7,31 +12,38 @@
     position: relative;
     width: 100%;
     height: 297px; 
-    border-radius: 40px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}
+
+.caralog-item[data-image='1'] {
+    background-image: url('/assets/images/cars-card.png');
+}
+.caralog-item[data-image='2'] {
+    background-image: url('/assets/images/cars-card-second.png');
 }
 
 .catalog-item-content {
+    position: relative; /* Изменено с absolute на relative */
+    width: 100%;
+    height: auto;
     padding: 40px 0 40px 40px;
     width: 308px;
+    z-index: 1111;
 }
-.catalog-item-content::before {
+/* .catalog-item-content::before {
+    content: "";
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
-    width: 834px; 
-    height: 297px; 
-    background-repeat: no-repeat;
-    z-index: -1;
-}
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 
-.catalog-item-content[data-image='1']::before {
-    background-image: url('/assets/images/cars-card.png');
-}
+} */
 
-.catalog-item-content[data-image='2']::before {
-    background-image: url('/assets/images/cars-card-second.png');
-}
 
 
 .catalog-item-content > h3 {
@@ -46,11 +58,6 @@
     font-size: 16px;
 }
 
-.catalog-section-cards {
-    display: flex;
-    gap: 12px;
-    justify-content: space-between;
-}
 
 .button[data-button="catalog-button"] {
     background-color: rgba(255, 255, 255, 0.317);
